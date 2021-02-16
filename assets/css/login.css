@@ -1,0 +1,68 @@
+body {
+    width: 100%;
+    background: url(../images/login_bg.jpg) no-repeat;
+    /*cover 覆盖完整个容器; container 会有覆盖不全的清况  */
+    background-size: cover;
+}
+
+
+/* 左上角 logo */
+
+.logo {
+    position: absolute;
+    left: 40px;
+    top: 20px;
+}
+
+
+/* 表单内容 */
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.layui-form {
+    padding: 0 30px;
+}
+
+.content .title {
+    height: 60px;
+    /* 给父元素设置 flex 布局,主侧轴设置居中对齐 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link a {
+    float: right;
+}
+
+
+/* 子绝父相 */
+
+.layui-form-item {
+    position: relative;
+}
+
+
+/* 定位输入框上的图标 */
+
+.layui-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.layui-input {
+    padding-left: 35px;
+}
